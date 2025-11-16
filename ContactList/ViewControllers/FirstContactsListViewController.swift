@@ -1,6 +1,6 @@
 import UIKit
 
-class FirstContactsListViewController: UITableViewController {
+final class FirstContactsListViewController: UITableViewController {
     let contactList = Contact.getAllContacts()
 
     override func viewDidLoad() {
