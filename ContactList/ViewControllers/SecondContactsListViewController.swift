@@ -1,12 +1,9 @@
 import UIKit
 
-class ViewController: UIViewController {
+class SecondContactsListViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
     }
-
-
 }
-
