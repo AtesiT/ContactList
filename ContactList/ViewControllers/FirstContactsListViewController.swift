@@ -2,10 +2,15 @@ import UIKit
 
 final class FirstContactsListViewController: UITableViewController {
     let contactList = Contact.getAllContacts()
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+    }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let indexPath = tableView.indexPathForSelectedRow else { return }
+        let viewController = segue.destination as? DetailsContactViewController
+        viewController?.contact = contactList[indexPath.row]
     }
 }
 
