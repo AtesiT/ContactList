@@ -1,7 +1,7 @@
 import UIKit
 
 final class SecondContactsListViewController: UITableViewController {
-    let contactList = Contact.getAllContacts()
+    let contactList = Contact.getRandomContacts()
     
     override func viewDidLoad() {
         super.viewDidLoad()
